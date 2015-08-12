@@ -202,7 +202,7 @@
                     for (int i = nprocess - 1; i >= 0; i--) {
                         
                         NSString *processID = [[NSString alloc] initWithFormat:@"%d", process[i].kp_proc.p_pid];
-                        NSString *processName = [[NSString alloc] initWithFormat:@"%s", process[i].kp_proc.p_comm];
+                        NSString *processName = [[NSString alloc] initWithUTF8String:process[i].kp_proc.p_comm];
                         NSString *processPriority = [[NSString alloc] initWithFormat:@"%d", process[i].kp_proc.p_priority];
                         NSDate   *processStartDate = [NSDate dateWithTimeIntervalSince1970:process[i].kp_proc.p_un.__p_starttime.tv_sec];
                         NSString       *processParentID = [[NSString alloc] initWithFormat:@"%d", [self parentPIDForProcess:(int)process[i].kp_proc.p_pid]];
