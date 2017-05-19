@@ -93,7 +93,7 @@ enum {
     KFSymbolic = 34859,
     // Failed the File Exists Check
     KFFileExists = 6625,
-} JailbrokenChecks;
+};
 
 // Define the filesystem check
 #define FILECHECK [NSFileManager defaultManager] fileExistsAtPath:
