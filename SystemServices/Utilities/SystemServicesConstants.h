@@ -38,11 +38,11 @@
 #include <stdio.h>
 #import <TargetConditionals.h>
 #import <netinet/in.h>
-#if TARGET_IPHONE_SIMULATOR
-#include <net/route.h>
-#else
+//#if TARGET_IPHONE_SIMULATOR
+//#include <net/route.h>
+//#else
 #include "route.h"
-#endif
+//#endif
 
 //#import "SSHardwareInfo.h"
 #import "SSJailbreakCheck.h"
