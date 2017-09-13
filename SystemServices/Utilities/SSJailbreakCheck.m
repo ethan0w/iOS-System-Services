@@ -219,10 +219,10 @@
 + (int)systemCheck {
     @try {
         // See if the system call can be used
-        if (system(0)) {
-            // Jailbroken
-            return KFSystem;
-        } else
+//         if (system(0)) {
+//             // Jailbroken
+//             return KFSystem;
+//         } else
             // Not Jailbroken
             return NOTJAIL;
     }
